@@ -1,9 +1,6 @@
-
-% Project:-
 % Vectorized Monte Carlo implementation of evaluating an asian option 
 % with the Milstein sheme
-% By: 
-% Class: Computaional Finance, University of St. Gallen 
+% Computaional Finance, University of St. Gallen, 2017
 
 tic
 M           = 100000;  %Number of paths          
@@ -60,4 +57,3 @@ payoff = max(0,S(:,N+1) - mean(S,2));
 
 V = exp(-rho*T)*mean(payoff)
 toc
-
